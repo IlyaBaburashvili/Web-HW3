@@ -75,7 +75,15 @@ function removeC() {
         numCols=0;
         return;
         }
-}
+    else{
+        for(let i=1; i<=numRows; i++ ){
+            let row = document.getElementById(`row ${i}`);
+            row.removeChild(row.lastElementChild);
+            }
+        numCols--;
+        }  
+    }
+
 //sets global var for selected color
 function selected(){
     colorSelected = document.getElementById("selectedID").value;
