@@ -52,8 +52,11 @@ function removeR() {
 	lastRow.removeChild(lastRow.lastElementChild);
     }
     lastRow.remove();
+    if(numRows===1){
+        numCols=0;
+    }
+    numRows--;
 }
-
 //Remove a column
 function removeC() {
     alert("Clicked Remove Col")
