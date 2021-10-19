@@ -130,3 +130,11 @@ function fillU(){
           }
     }
 }
+
+function resetColor(){
+    let grid = document.getElementById("grid");
+    let td = grid.getElementsByTagName("td");
+    for (let i = 0; i < td.length; i++) {
+        td[i].style.backgroundColor = "white";    
+    }
+}
