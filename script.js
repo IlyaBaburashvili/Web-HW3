@@ -106,7 +106,11 @@ function selected(){
 }
 
 function fill(){
-    alert("Clicked Fill All")
+    let grid = document.getElementById("grid");
+    let td = grid.getElementsByTagName("td");
+    for (let i = 0; i < td.length; i++) {
+        td[i].style.backgroundColor = colorSelected;
+    }
 }
 
 function clearAll(){
