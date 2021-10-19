@@ -23,7 +23,14 @@ function addR() {
 
 //Add a column
 function addC() {
-    alert("Clicked Add Col")
+    if(numRows==0){
+	numRows++;
+        let grid = document.getElementById("grid");
+	let tr = document.createElement("tr");
+        tr.id = "row 1";
+        grid.appendChild(tr);
+    }
+    numCols++;
 }
 
 //Remove a row
