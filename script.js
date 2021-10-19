@@ -13,6 +13,12 @@ function addR() {
     tr.id = `row ${numRows}`;
     console.log(tr.id)
     grid.appendChild(tr);	
+    for(let i=0; i<numCols; i++ ){
+		let td = document.createElement("td");
+        td.style.backgroundColor=colorSelected;
+        td.setAttribute("onclick", "style.backgroundColor = colorSelected");
+    	tr.appendChild(td);
+    }
 }
 
 //Add a column
