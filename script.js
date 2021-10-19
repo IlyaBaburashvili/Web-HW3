@@ -4,10 +4,15 @@ let numCols = 0;
 let colorSelected="white"; 
 //Add a row
 function addR() {
-	if(numCols==0){
+    if(numCols==0){
     	numCols++;
     }
     numRows++;
+    let grid = document.getElementById("grid");
+    let tr = document.createElement("tr");
+    tr.id = `row ${numRows}`;
+    console.log(tr.id)
+    grid.appendChild(tr);	
 }
 
 //Add a column
