@@ -1,7 +1,7 @@
 
 let numRows = 0;
 let numCols = 0;
-let colorSelected; 
+let colorSelected="white"; 
 //Add a row
 function addR() {
     alert("Clicked Add Row")
