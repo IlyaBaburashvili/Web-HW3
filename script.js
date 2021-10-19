@@ -41,7 +41,6 @@ function addC() {
     }
 }
 
-
 //Remove a row
 function removeR() {
     if(numRows==0){
@@ -57,9 +56,12 @@ function removeR() {
     }
     numRows--;
 }
+
 //Remove a column
 function removeC() {
-    alert("Clicked Remove Col")
+    if(numCols===0){
+        return;
+    }   
 }
 //sets global var for selected color
 function selected(){
