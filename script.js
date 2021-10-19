@@ -31,7 +31,16 @@ function addC() {
         grid.appendChild(tr);
     }
     numCols++;
+    for(let i=1; i<=numRows; i++ ){
+    	let row = document.getElementById(`row ${i}`);
+        console.log(`row ${i}`);
+    	let td = document.createElement("td");
+        td.style.backgroundColor=colorSelected;
+        td.setAttribute("onclick", "style.backgroundColor = colorSelected");
+    	row.appendChild(td);
+    }
 }
+
 
 //Remove a row
 function removeR() {
