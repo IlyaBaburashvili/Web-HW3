@@ -4,8 +4,12 @@ let numCols = 0;
 let colorSelected="white"; 
 //Add a row
 function addR() {
-    alert("Clicked Add Row")
+	if(numCols==0){
+    	numCols++;
+    }
+    numRows++;
 }
+
 //Add a column
 function addC() {
     alert("Clicked Add Col")
