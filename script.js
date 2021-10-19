@@ -62,6 +62,19 @@ function removeC() {
     if(numCols===0){
         return;
     }   
+    if(numCols===1){
+        for(let i=1; i<=numRows; i++ ){
+            let row = document.getElementById(`row ${i}`);
+            row.removeChild(row.lastElementChild);
+            }  
+        for(let i=1; i<=numRows; i++ ){
+            let tr = document.getElementById(`row ${i}`);
+            tr.remove();
+            }
+        numRows=0;
+        numCols=0;
+        return;
+        }
 }
 //sets global var for selected color
 function selected(){
