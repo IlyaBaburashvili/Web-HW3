@@ -88,6 +88,21 @@ function removeC() {
 function selected(){
     colorSelected = document.getElementById("selectedID").value;
     console.log(colorSelected);
+    if(colorSelected[0]===true){
+      	colorSelected="white";
+      }
+    else if(colorSelected[1]===true){
+      	colorSelected="red";
+      }
+    else if(colorSelected[2]===true){
+      	colorSelected="blue";
+      }
+    else if(colorSelected[3]===true){
+      	colorSelected="green";
+      }
+    else if(colorSelected[4]===true){
+      	colorSelected="yellow";
+      }
 }
 
 function fill(){
