@@ -44,8 +44,11 @@ function addC() {
 
 //Remove a row
 function removeR() {
-    alert("Clicked Remove Row")
+    if(numRows==0){
+    	return;
+    }
 }
+
 //Remove a column
 function removeC() {
     alert("Clicked Remove Col")
