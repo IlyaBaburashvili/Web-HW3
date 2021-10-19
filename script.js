@@ -47,6 +47,11 @@ function removeR() {
     if(numRows==0){
     	return;
     }
+    let lastRow = document.getElementById(`row ${numRows}`);
+    for(let i=0; i<numCols; i++ ){
+	lastRow.removeChild(lastRow.lastElementChild);
+    }
+    lastRow.remove();
 }
 
 //Remove a column
